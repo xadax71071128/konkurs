@@ -35,7 +35,7 @@ $conn = new mysqli("localhost", "root", "", "szachy");
 <th>klasa</th>
 </tr>
 <?php
-$sql = "SELECT pseudonim,tytul,ranking,klasa FROM zawodnicy WHERE ranking >2078 ORDER BY ranking DESC;";
+$sql = "SELECT pseudonim, tytul, ranking, klasa FROM zawodnicy WHERE ranking > 2787 ORDER BY ranking DESC;";
 $result = $conn->query($sql);
 $i=1;
 While ($row = $result->fetch_assoc()) {
